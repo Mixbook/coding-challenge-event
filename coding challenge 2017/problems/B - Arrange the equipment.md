@@ -28,7 +28,7 @@ For each test case, output one line that consists of an ordered list of the part
 Input
 2
 3| 1 3 +, 1 2 -, 2 3 +, 2 1 -, 3 1 +, 3 2 -
-4| 1 2 +, 1 3 -, 1 4 -, 2 3 +, 2 4 +, 2 1 -, 3 1 +, 3 4 +, 3 2 -, 4 3 +, 4 2 +, 4 2 -
+4| 1 2 +, 1 3 -, 1 4 -, 2 3 +, 2 4 +, 2 1 -, 3 1 +, 3 4 +, 3 2 -, 4 3 +, 4 2 +, 4 1 -
  
 Output
 1 3 2
