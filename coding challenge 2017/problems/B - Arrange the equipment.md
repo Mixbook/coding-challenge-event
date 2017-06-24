@@ -10,11 +10,9 @@ Robert, the technical manager of the studio, has been assigned with making the p
 Help Robert find the best match for positioning the equipment in a row in such a way, that each part is next to the ones it works best with. Keep in mind that parts don't always work well both ways: **a** will work well with **b**, but **b** can work badly with **a**.
  
 ### Input
-The first line of the input gives the number of test cases, **T**. T test cases follow. Each test case consists of a list of equipment parts separated by comma starting with **N**. Every part is represented as **x ! y**, where **x** is the list of parts it works well with and **y** the list of parts it works worse with.
+The first line of the input gives the number of test cases, **T**. T test cases follow. Each test case consists of a list of part pairs separated by comma starting with **N**. Every pair is represented  as **x y k**, where **x** and **y** are parts nad **k** showes if they work good together(+) or bad together(-).
 
-For example: ```3| 2 ! 3, 1 ! 3, 2 ! 1``` means there are 3 parts. First part is good with 2 and bad with 3 (2 ! 3), second part is good with 1 and bad with 3 (1 ! 3), And the third part is good with 2 and bad with 1 (2 ! 1). Check image for reference.
-
-![Input Explanation](/coding%20challenge%202017/problems/images/B-example-io.png?raw=true "Input Explanation")
+For example: ```3| 1 3 +, 1 2 -, 2 3 +, 2 1 -, 3 1 +, 3 2 -```. **3|** means there are 3 parts. 1 is good with 3, 1 is bad with 2, 2 is good with 3 and so on.
  
 ### Output
 For each test case, output one line that consists of an ordered list of the parts separated by spaces.
@@ -29,8 +27,8 @@ For each test case, output one line that consists of an ordered list of the part
 ```bash
 Input
 2
-3| 3 ! 2, 3 ! 1, 1 ! 2
-4| 2 ! 3 4, 3 4 ! 1, 1 4 ! 2, 3 2 ! 1
+3| 1 3 +, 1 2 -, 2 3 +, 2 1 -, 3 1 +, 3 2 -
+4| 1 2 +, 1 3 -, 1 4 -, 2 3 +, 2 4 +, 2 1 -, 3 1 +, 3 4 +, 3 2 -, 4 3 +, 4 2 +, 4 2 -
  
 Output
 1 3 2
